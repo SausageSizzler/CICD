@@ -69,7 +69,7 @@ def query_parser(query_result: List[dict], function_name: str) -> List[List]:
             errored_rows.append(
                 [
                     row_data["run_id"],
-                    f"Records read != records written: {row_data["records_written"]} != {row_data["records_read"]}",
+                    f"Records read != records written: {row_data['records_written']} != {row_data['records_read']}",
                 ]
             )
         elif (
