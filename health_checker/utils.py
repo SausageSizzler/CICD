@@ -77,7 +77,7 @@ def query_parser(query_result: List[dict], function_name: str) -> List[List]:
             and row_data["status"].upper() != "SUCCESS_NO_DATA"
         ):
             errored_rows.append(
-                [row_data["run_id"], f"Status was not successful: {row_data["status"]}"]
+                [row_data["run_id"], f"Status was not successful: {row_data['status']}"]
             )
         # Add another here for delyed function start time?
     return errored_rows
